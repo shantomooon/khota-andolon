@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>khota</title>
+    <style>
+        .fk {
+            background-color: black;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .safi {
+            font-weight: 700;
+            font-size: 32px;
+            color: #E6533C;
+        }
+
+        .rafi {
+            width: 300px;
+            border: 1px solid #FFFFFF;
+            border-radius: 100rex;
+           
+            /* font-weight: 100; */
+            /* font-size: 16px; */
+            display: flex;
+            align-items: center;
+            
+            gap: 0px 14px;
+            /* padding: 0px 20px; */
+            color: white;
+        }
+
+        .pk {
+            font-weight: 500;
+            font-size: 16px;
+            color: #FFFFFF;
+            border-radius: 50px;
+            background-color: #E6533C;
+            padding: 8px 20px 8px 20px;
+        }
+
+        .content {
+            display: flex;
+            background: black;
+
+            font-size: 78px;
+            font-weight: 900;
+            color: #FFFFFF;
+
+
+        }
+
+        .pix {
+
+            font-weight: 400;
+            font-size: 16px;
+            color: #FFFFFF;
+            align-items: flex-start;
+            justify-content: flex-start;
+
+
+        }
+
+
+        .mb {
+            color: #FFFFFF;
+            font-weight: 500;
+            font-size: 20px;
+            border: 1px solid #E6533C;
+            background-color: #E6533C;
+            border-radius: 40px;
+            ;
+            padding: 16px 40px 16px 40px;
+            text-align: center;
+        }
+
+        .mj {
+            color: #FFFFFF;
+            font-weight: 500;
+            font-size: 20px;
+
+            border: 1px solid white;
+
+            padding: 16px 40px 16px 40px;
+
+            background-color: black;
+            border-radius: 100px;
+            ;
+        }
+
+        .moon {
+            box-sizing: border-box;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+
+            backdrop-filter: blur(20px);
+            background: rgba(255, 255, 255, 0.1);
+
+            padding: 1px;
+
+            position: absolute;
+            top: 240px;
+            left: 980px;
+            text-align: center;
+            width: 200px;
+            height: 100px;
+
+        }
+
+        .om {
+
+            font-weight: 800;
+            font-size: 38px;
+            line-height: 1;
+            margin: 0;
+            padding: 8px;
+
+        }
+
+        .jb {
+            font-size: 14px;
+            font-weight: 400;
+
+        }
+
+        .mp {
+            text-align: center;
+            font-weight: 400;
+            font-size: 16px;
+            color: #FFFFFF;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        .left-content {
+            width: 60%;
+
+        }
+
+        .robi {
+
+            box-sizing: border-box;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+
+            backdrop-filter: blur(20px);
+            background: rgba(255, 255, 255, 0.1);
+
+            padding: 1px;
+
+            position: absolute;
+            top: 550px;
+            left: 650px;
+            text-align: center;
+            width: 200px;
+            height: 100px;
+
+
+            /* box-sizing: border-box;
+border: 1px solid rgba(255, 255, 255, 0.1);
+border-radius: 12px;
+
+backdrop-filter: blur(20px);
+background: rgba(255, 255, 255, 0.1);
+
+padding: 1px;
+
+position: absolute;
+top: 500px;
+left: 900px;
+width: 200px;
+height: 100px;
+text-align: center;
+
+
+ */
+
+
+        }
+
+        .bo {
+            width: 40%;
+            position: relative;
+
+        }
+
+        .zross {
+            width: 40px;
+            height: 40px;
+            background: rgb(230, 83, 60);
+            border-radius: 50%;
+            position: absolute;
+            left: 10px;
+            top: 40px;
+
+        }
+
+        .hero {
+            background-color: black;
+        }
+
+        .container {}
+
+        .hero-conatainer {
+            color: #FFFFFF;
+            font-weight: 900;
+            font-size: 48px;
+            position: static;
+            margin: 28px 0px;
+            text-align: center;
+            /* align-items: center;
+    justify-content: center; */
+        }
+
+        .bk {
+            margin: 28px 0px;
+        }
+
+        .zero {
+            display: flex;
+            gap: 5%;
+            /* width: 200px;
+height: 100px; */
+            border-radius: 50%;
+            justify-content: center;
+
+        }
+
+        .zero img {
+            border-radius: 50%;
+        }
+
+        .Practice {
+            font-size: 14px;
+            font-weight: 400;
+            color: #FFFFFF;
+
+        }
+
+        .bonik {
+            font-size: 18px;
+            font-weight: 600;
+            color: #FFFFFF;
+            align-items: center;
+            text-align: left;
+            /* justify-content: flex-start; */
+            /* flex-direction: column; */
+            justify-content: center;
+
+        }
+
+        .section {
+            display: flex;
+            justify-content: space-around;
+            border-radius: 18px;
+            background: rgb(34, 34, 34);
+            width: 900px;
+            height: 400px;
+            margin: 0px auto;
+            /* align-self: stretch;
+flex-grow: 0; */
+
+
+            /* margin: 62px 0px; */
+            /* text-align: center; */
+
+
+
+        }
+
+        .Run {
+            color: #FFFFFF;
+            /* margin: 14px 34px; */
+            font-size: 48px;
+            font-weight: 800;
+            text-align: left;
+            /* justify-content: center; */
+            /* padding: 0px 200px; */
+            /* flex-direction: column;
+align-items: center; */
+
+        }
+
+        .banner img {
+            width: 350px;
+            height: 300px;
+            position: absolute;
+            left: 700px;
+            border-radius: 18%;
+            padding: 15px 25px;
+            top: 1200px;
+
+        }
+
+        .row {
+
+            display: flex;
+        }
+
+        .png img {
+            width: 323px;
+            height: 218px;
+            color: #06FFD280;
+        }
+
+        .png {
+            color: black;
+        }
+
+        .bold img {
+            width: 539px;
+            height: 218px;
+
+        }
+
+        .old img {
+            width: 388px;
+            height: 218px;
+
+        }
+
+        .fact img {
+            width: 435px;
+            height: 248px;
+        }
+
+        .display img {
+            width: 408px;
+            height: 248px;
+        }
+
+        .column img {
+            width: 408px;
+            height: 248px;
+        }
+
+        .back {
+            padding: 0%;
+        }
+
+        .margin {
+            
+            justify-content: space-around;
+
+            background: rgb(34, 34, 34);
+
+            width: 1245px;
+            /* height: 250px; */
+            /* margin: 0px auto; */
+
+
+        }
+
+        .selection {
+            position: static;
+            /* width: 443px;
+height: 34px;  */
+            color: white;
+         
+
+        }
+
+        .pisxo {
+            display: grid;
+            grid-template-columns: repeat(2, 100px);
+         width: 100%;
+         justify-content: center;
+
+        }
+
+        .item {
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 10px;
+            font-weight: 400;
+            /* text-align: left; */
+            /* justify-content: center; */
+            text-align: center;
+            padding: 20px;
+        }
+       
+        .bmw {
+            font-size: 28px;
+            font-weight: 700;
+        }
+
+        .belive {
+            /* font-size: 14px;
+            font-weight: 400; */
+        }
+
+        .shape {
+            display: grid;
+            grid-template-columns: repeat(2, 100px);
+            width: 100%;
+            margin: 34px 0px;
+           
+        }
+        .span{
+             display: flex;
+        }
+        .images{
+            position: static;
+            width: 960px;
+
+            background-color: #FFFFFF1A;
+           
+            justify-content: space-around;
+            border-radius: 18px;
+            background: rgb(34, 34, 34);
+            margin: 0px auto;
+        }
+        .images img{
+        width: 300px;
+         height: 200px;
+       
+         margin: 1% 8px;
+         
+        }
+        .media{
+            background-color: #FFFFFF1A;
+            display: flex;
+            margin-top: 20px;
+            justify-content: space-around;
+            /* margin: 88px 50px; */
+            height: 170px;
+        }
+        .mediapl{
+            /* margin: 5% 0px; */
+        }
+        .hero-png{
+         font-weight: 1000;
+         font-size: 40px;
+            
+         color: #E6533C;
+        }
+        .mp-png{
+            font-size: 14px;
+           font-weight: 400;
+           color: #FFFFFF;
+        }
+        .service{
+            margin: 20% 50%;  
+        }
+        .Contact-png{
+            font-size: 32px;
+            font-weight: 700;
+            color: #FFFFFF;
+        }
+     .fitness{
+        color: #FFFFFF;
+     }
+     .arnob{
+        /* font-size: 20px; */
+        font-weight: 400;
+        color: #FFFFFF;
+        justify-content: center;
+        padding: 1%;
+        
+    }
+    
+    
+    .busuni{
+        width: 1000px;
+        padding: px;
+       text-align: center;
+       
+    }
+     .gappar{
+      background-color: #FFFFFF1A;
+        
+        text-align: center;
+    
+        padding: 10%;
+     }          
+
+    </style>
+</head>
+
+<body>
+    <div class="fk">
+        <div class="safi">
+            <h3>Fitness</h3>
+        </div>
+        <div class="rafi">
+            <p class="pk">Home</p>
+            <P>Service</P>
+            <p>Contact</p>
+            <p>About</p>
+        </div>
+    </div>
+
+    <section class="hero">
+        <div class="content">
+            <div class="left-content">
+                <p class="bk"> Get body in shape & stay healthy</p>
+                <h1 class="pix">A huge selection of health and fitness content, healthy recipes
+                    <br> and transformation stories to help you get fit and stay fit!
+                </h1>
+                <button class="mb">Join Club Now!</button>
+                <button class="mj">Download App</button>
+            </div>
+
+            <div class="bo"> <img src="images/Images 2.png" alt="Lorem Ipsum">
+                <div class="moon">
+
+                    <h2 class="om">500+
+                    </h2>
+                    <h3 class="jb">Free Workout Videos </h3>
+                </div>
+                <div class="robi">
+
+                    <h1 class="om">350+</h1>
+                    <p class="jb">Video tutorial</p>
+                </div>
+            </div>
+            <div class="moon">
+
+                <h2 class="om">500+
+                </h2>
+                <h3 class="jb">Free Workout Videos </h3>
+            </div>
+            <div class="robi">
+                <div class="zross"></div>
+                <h1 class="om">350+</h1>
+                <p class="jb">Video tutorial</p>
+            </div>
+        </div>
+
+        <div class="conatainer">
+            <h4 class="hero-conatainer">Change Your Habits</h4>
+            <p class="mp">We believe fitness should be accessible to everyone, everywhere, regardless of income or
+                <br> access to a gym.
+            </p>
+        </div>
+        <div class="zero">
+            <div>
+                <img src="images/image 3.png" alt="">
+                <h1 class="bonik">Movement</h1>
+                <p class="Practice">We believe fitness should be
+                    <br>accessible to everyone
+                </p>
+            </div>
+            <div><img src="images/image 2.png" alt="">
+                <h2 class="bonik">Time</h2>
+
+                <p class="Practice">We believe fitness should be
+                    <br>accessible to everyone
+                </p>
+            </div>
+            <div>
+                <img src="images/image 4.png" alt="">
+                <h3 class="bonik">Practice</h3>
+                <p class="Practice">We believe fitness should be
+                    <br> accessible to everyone
+                </p>
+            </div>
+            <div>
+                <img src="images/image 5.png" alt="">
+                <h4 class="bonik">Weight Loss</h4>
+                <p class="Practice">We believe fitness should be
+                    <br>accessible to everyone
+                </p>
+            </div>
+
+        </div>
+        <div class="banner">
+            <div class="section">
+                <div>
+                    <h1 class="Run">Run an Extra
+                        <br>Mile Easily
+                    </h1>
+
+                    <p class="Practice">We believe fitness should be accessible to everyone,
+                        <br>everywhere, regardless of income or access to a gym. With
+                        <br>hundreds of professional workouts.
+                    </p>
+                    <button class="mb">Join Now</button>s
+                </div>
+
+                <div>
+                    <img src="images/run.jpg" alt="">
+                </div>
+
+            </div>
+
+        </div>
+        <div class="">
+            <div>
+                <h5 class="hero-conatainer">Trainings and Exercises</h5>
+                <p class="mp">We believe fitness should be accessible to everyone, everywhere, regardless of income or
+                    <br>access to a gym.
+                </p>
+            </div>
+        </div>
+
+        <div class="back">
+            <div class="row">
+                <div class="png"><img src="images/exercise1.jpg" alt=""></div>
+                <div class="bold"> <img src="images/exercise2.png" alt=""></div>
+                <div class="old"> <img src="images/exercise3.png" alt=""></div>
+
+            </div>
+            <div class="row">
+                <div class="fact"><img src="images/exercise4.png" alt=""></div>
+                <div class="display"><img src="images/exercise5.jpg" alt=""></div>
+                <div class="column"><img src="images/exercise6.jpg" alt=""></div>
+            </div>
+        </div>
+        <div>
+            <h1 class="hero-conatainer">BMI Calculator</h1>
+            <p class="mp">We believe fitness should be accessible to everyone, everywhere, regardless of income or
+                <br> access to a gym.
+            </p>
+
+        </div>
+        <div class="margin">
+
+            <div>
+                <h1 class="selection">BMI Calculator Chart</h1>
+            </div>
+
+
+            <div class="span">
+                
+                <div class="pisxo">
+                   
+                    <div class="item">BMI </div>
+                    <div class="item">Weight Status</div>
+                    <div class="item">Below 18.5</div>
+                    <div class="item">Underweight</div>
+                    <div class="item">18.5 - 24.9</div>
+                    <div class="item">Healthy</div>
+                    <div class="item">25.0 - 29.9</div>
+                    <div class="item">Overweight</div>
+                    <div class="item">30.0 - and Above</div>
+                    <div class="item">Obese</div>
+                </div>
+                <div>
+                    <h1 class="bmw">Calculate your BMI</h1>
+                    <p class="believe">We believe fitness should be accessible to everyone, everywhere, regardless of
+                        <br>income or access to a gym.
+                    </p>
+
+                    <div class="shape">
+                        <div class="item ">Height/cm</div>
+                        <div class="item">Weight/kg</div>
+                        <div class="item">Age</div>
+                        <div class="item">Sex</div>
+                        <div class="item">Select an activity factor</div>
+                       
+                    </div>
+                    <button class="mb">Calculate</button>
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+      <div>
+        <div>
+            <h1 class="hero-conatainer">Meet Our Team</h1>
+            <p class="mp">We believe fitness should be accessible to everyone, everywhere, regardless of income or <br>
+                access to a gym.</p>
+        </div>
+        <div class="images">
+            <img src="images/trainer1.png" alt="">
+            <img src="images/trainer2.png" alt="">
+            <img src="images/trainer3.png" alt="">
+            <img src="images/trainer4.png" alt="">
+            <img src="images/trainer5.png" alt="">
+            <img src="images/trainer6.png" alt="">
+        </div>
+      </div>
+      <div class="media">
+        <div class="mediapl">
+        <h1 class="hero-png">Fitness</h1>
+        <p class="mp-png">We believe fitness should be accessible to everyone, <br>everywhere, regardless of income or access to a gym. With <br>hundreds of professional workouts.</p>
+        </div>
+       <div class="Service">
+        <h1 class="Contact-png">Get Started</h1>
+        <p class="fitness">Service</p>
+        <p class="fitness">Contact sU</p>
+        <p class="fitness">Affiliate Program</p>
+        <p class="fitness">About Us</p>
+       </div>
+      <div class="fitness-pngs">
+        <h1 class="Contact-png">Get Started</h1>
+        <p class="fitness">Fitness</p>
+        <p class="fitness">Platform</p>
+        <p class="fitness">Workout Libary</p>
+        <p class="fitness">App Design</p>
+      </div>
+      <div>
+
+      </div>
+      </div>
+      <div class="gappar">
+        <div class="busuni">
+         <hr> 
+         
+        </div>
+        
+        <h1 class="arnob">All right reserved @Fitness 2024</h1>
+    </div>
+
+     
+      
+    </section>
+
+
+
+
+</body>
+
+</html>
